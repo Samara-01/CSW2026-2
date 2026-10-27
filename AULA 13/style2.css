@@ -1,0 +1,156 @@
+* {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #080808
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: #fff
+    }
+
+    header {
+      height: 53px;
+      min-height: 53px;
+      background: #2c4053;
+      border-top: 4px solid #c8e4d1;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px
+    }
+
+    .logo {
+      font-size: 16px;
+      color: #fff;
+      text-decoration: none
+    }
+
+    .topnav {
+      display: flex;
+      align-items: center;
+      gap: 20px
+    }
+
+    .topnav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px
+    }
+
+    .layout {
+      display: flex;
+      flex: 1;
+      min-height: 0
+    }
+
+    aside {
+      width: 200px;
+      flex: 0 0 200px;
+      background: #344b60;
+      color: #fff;
+      padding: 19px 20px
+    }
+
+    .sidenav {
+      display: flex;
+      flex-direction: column;
+      gap: 15px
+    }
+
+    .sidenav a {
+      font-size: 16px;
+      color: #fff;
+      text-decoration: none
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+      min-width: 0
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 15px
+    }
+
+    .tile {
+      height: 58px;
+      background: #edf0f1;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px
+    }
+
+    .tile.wide {
+      grid-column: span 2
+    }
+
+    footer {
+      height: 38px;
+      min-height: 38px;
+      background: #2c4053;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px
+    }
+
+    @media(max-width:760px) {
+      .layout {
+        flex-direction: column
+      }
+
+      aside {
+        width: 100%;
+        flex-basis: auto;
+        padding: 14px 20px
+      }
+
+      .sidenav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px 20px
+      }
+
+      .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+    }
+
+    @media(max-width:420px) {
+      header {
+        height: auto;
+        min-height: 53px;
+        gap: 12px;
+        flex-wrap: wrap;
+        padding: 12px
+      }
+
+      .cards {
+        grid-template-columns: 1fr
+      }
+
+      .tile.wide {
+        grid-column: span 1
+      }
+
+      .topnav {
+        gap: 12px
+      }
+    }

@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px black dashed;
+    padding: 5px;
+    background-color: rgb(7, 35, 77);
+    border-radius: 12px;
+}
+
+.bloco {
+    background-color: grey;
+    padding: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 12px;
+    background-color: rgb(255, 102, 0);
+}
+
+.container2 {
+    display: flex;
+    gap: 10px;
+    border: 1px black dashed;
+    padding: 5px;
+    background-color: rgb(7, 35, 77);
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.exemplo1 {
+    width:  min(100%, 500px);
+    overflow: hidden;
+    border-radius: 24px;
+    background: #092b50;
+}
+
+
+.painel1 {
+    height: 430px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.linha1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+
+}.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.exemplo1 {
+    width:  min(100%, 500px);
+    overflow: hidden;
+    border-radius: 24px;
+    background: #092b50;
+}
+
+
+
+.painel {
+    height: 430px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+}
+
+.bloco1 {
+    height: 38px;
+    flex: 1;
+    min-width: 0;
+    background: #ff8738;
+    border-radius: 13px;
+}
+
+.bloco.largo {
+    flex: 2;
+}
+
